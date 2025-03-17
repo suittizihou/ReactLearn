@@ -44,7 +44,7 @@ export function TimerApp() {
             <MyButton title='リセット' onClick={() => {
                 SetPause(true)
                 SetTimer(0, 0)
-                setResetFlag(!resetFlag);
+                setResetFlag(!resetFlag); // InputNumberの値を初期化するためにフラグ更新
             }} />
 
             <h1>{timer.minutes}分{timer.seconds}秒</h1>
